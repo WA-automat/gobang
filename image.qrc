@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/startpagebackground.jpg</file>
+        <file>image/tmpbackground.jpg</file>
+        <file>image/tiebackground.png</file>
+        <file>image/winbackground.jpg</file>
+    </qresource>
+</RCC>
