@@ -63,14 +63,20 @@ endWidget::endWidget(QWidget *parent, int winplayer) :
 
     // 设置信号槽功能
     // 点击重新开始按钮，回到起始页面
-    connect(ui->restartbutton, &QPushButton::clicked, this, [=](){
+    connect(ui->restartbutton,
+            &QPushButton::clicked,
+            this,
+            [=](){
         StartPage * newPage = new StartPage;
         newPage->setAttribute(Qt::WA_DeleteOnClose);
         newPage->show();
         this->close();
     });
     // 点击退出按钮，直接退出页面
-    connect(ui->closebutton, &QPushButton::clicked, this, [=](){
+    connect(ui->closebutton,
+            &QPushButton::clicked,
+            this,
+            [=](){
         this->close();
     });
 }

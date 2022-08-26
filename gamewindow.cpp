@@ -35,18 +35,27 @@ GameWindow::GameWindow(QWidget *parent) :
 
     // 设置信号槽功能
     // 设置重新开始一个游戏进程，功能是关闭当前页面并创建一个新的游戏页面
-    connect(ui->actionreload,&QAction::triggered,this,[=](){
+    connect(ui->actionreload,
+            &QAction::triggered,
+            this,
+            [=](){
         GameWindow* gamewindow = new GameWindow;
         gamewindow->setAttribute(Qt::WA_DeleteOnClose);
         gamewindow->show();
         this->close();
     });
     // 关闭当前页面
-    connect(ui->actionclose,&QAction::triggered,this,[=](){
+    connect(ui->actionclose,
+            &QAction::triggered,
+            this,
+            [=](){
         this->close();
     });
     // 撤回上一步
-    connect(ui->revocation,&QAction::triggered,this,[=](){
+    connect(ui->revocation,
+            &QAction::triggered,
+            this,
+            [=](){
         if(num){
             --num;
             map[ _x[num] / 300 ][ _y[num] / 300 ] = 0;

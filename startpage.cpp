@@ -21,7 +21,8 @@ StartPage::StartPage(QWidget *parent)
 
     // 设置图片背景
     QPalette pal = this->palette();
-    pal.setBrush(QPalette::Background,QBrush(QPixmap(":/image/startpagebackground.jpg").scaled(600, 800)));
+    pal.setBrush(QPalette::Background,
+                 QBrush(QPixmap(":/image/startpagebackground.jpg").scaled(600, 800)));
     this->setPalette(pal);
 
     // 设置快捷键与默认选中(默认选中开始游戏):空格是开启游戏的快捷键，Esc是结束游戏的快捷键
