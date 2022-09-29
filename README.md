@@ -28,12 +28,12 @@ update:2022-9-29
 
 1. 起始界面
 
-   <img src=".\image\起始界面.jpg" style="zoom:33%;" />
+   <img src=".\image\起始界面.jpg" style="zoom:20%;" />
 
 2. 游戏界面
 
-   <img src="./image/游戏界面.jpg" style="zoom:33%;" />
+   <img src="./image/游戏界面.jpg" style="zoom:20%;" />
 
 3. 结束界面之一
 
-   <img src="./image/结束界面之一.jpg" style="zoom:33%;" />
+   <img src="./image/结束界面之一.jpg" style="zoom:20%;" />
